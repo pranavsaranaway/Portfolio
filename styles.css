@@ -78,5 +78,111 @@
     margin: 0;            /* remove default spacing */
   }
   
-
+  .about {
+    padding: 50px 100px;
+    display: flex; /* enable flex layout */
+    align-items: center; /* vertically center image with text */
+    gap: 50px; /* space between text and image */
+  }
+  
+  .about-text {
+    flex: 1; /* take remaining width */
+    text-align: left;
+  }
+  
+  .about-image {
+    max-width: 250px;  /* adjust size as needed */
+    height: auto;
+    border-radius: 10px; /* optional rounded corners */
+    object-fit: cover;
+    margin-right: 70px;
+    box-shadow: #666 0px 0px 10px 0px; /* subtle shadow for depth */
+  }
+  
+  
+  .intro-block {
+    display: inline-block;       /* shrink to text width */
+    text-align: left;
+  }
+  
+  .intro {
+    font-size: 50px;
+    margin: 0;
+    position: relative;
+  }
+  
+  .intro::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #DF6D14;
+    margin-top: 12px;
+    border-radius: 2px;
+  }
+  .about .location{
+    font-size: 20px;
+    color: #666;
+    margin-top: 10px;
+  }
+  .about .education {
+    font-size: 20px;
+    color: #666;
+    margin-top: 2px;
+  }
+  .about p{
+    font-size: 20px;
+    color: #333;
+    margin-top: 15px;
+    line-height: 1.4; /* improves readability */
+  }
+  .about {
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #66666605;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Good for mobile responsiveness */
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  .about-text {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .about-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .social-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-links i {
+    font-size: 28px;
+    color: #DF6E21;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-links i:hover {
+    transform: scale(1.2);
+    color:#e68748
+  }
+  
+  
   

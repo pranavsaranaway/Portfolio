@@ -17,6 +17,9 @@
     font-weight: bold;
     font-style: normal;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   
   body {
     margin: 0;
@@ -184,5 +187,140 @@
     color:#e68748
   }
   
-  
-  
+  .skills {
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem; /* Add gap between elements */
+}
+
+.skills h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+.skills h2::after {
+  content: "";
+  display: block;
+  width: 60px; /* width of the orange line */
+  height: 4px;
+  background-color: #DF6D14;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.skills .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* Add gap between icons */
+}
+
+.skills i {
+    font-size: 3rem;
+    color: #DF6D14;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 1rem 0; /* Add margin to ensure proper spacing */
+}
+
+.skills i:hover {
+    transform: scale(1.2);
+    color: #e68748;
+}
+.publications {
+  padding: 60px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center children horizontally */
+  text-align: left;
+}
+
+.publications h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.publications h2::after {
+  content: "";
+  display: block;
+  width: 60px; /* width of the orange line */
+  height: 4px;
+  background-color: #DF6D14;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.publication-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 900px;
+}
+
+.venue-tag {
+  background-color: #c716d0;
+  color: white;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.pub-content {
+  flex: 1;
+}
+
+.pub-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.pub-authors {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0.3rem;
+}
+
+.faded-author {
+  color: #999;
+  text-decoration: underline dotted;
+}
+
+.pub-venue {
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.pub-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.pub-btn {
+  border: 1px solid #000;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.2s ease;
+}
+
+.pub-btn:hover {
+  background-color: #f3f3f3;
+}

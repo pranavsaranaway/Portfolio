@@ -5,7 +5,7 @@ This site showcases my work, projects, publications, skills, and more in a clean
 
 ## 🌐 Live Demo
 
-You can view the live website here: temp
+You can view the live website here: https://pranavsaranaway.github.io/Portfolio/
 
 ## 🛠️ Features
 

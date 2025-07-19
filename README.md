@@ -16,12 +16,12 @@ You can view the live website here: temp
 - 💻 Built with plain HTML, CSS, and JavaScript (no frameworks)
 
 ## 🗂️ File Structure
-/images -> Images (logo, profile pic, etc.)
-/fonts -> Custom fonts (Steph)
-/index.html -> Main HTML structure
-/styles.css -> All component and theme styles
-/script.js -> Dark mode toggle and theme logic
-/resume.pdf -> CV file
+- /images -> Images (logo, profile pic, etc.)
+- /fonts -> Custom fonts (Steph)
+- /index.html -> Main HTML structure
+- /styles.css -> All component and theme styles
+- /darkmode.js -> Dark mode toggle and theme logic
+- /resume.pdf -> CV file
 
 ## 📦 Dependencies
 This project does not use any external libraries or frameworks. Everything is built from scratch using:

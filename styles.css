@@ -10,13 +10,33 @@
   --color-text: #333;
   --color-muted: #666;
   --color-light: #999;
-  --color-bg: #f3f3f3;
+  --color-bg: #ffffff;
 
   /* Shadows */
   --shadow-soft: 0 2px 4px #fba54a1a;
   --shadow-deep: 0 4px 8px rgba(0, 0, 0, 0.15);
   --shadow-card: 0px 0px 10px 0px #666;
 }
+.darkmode {
+  /* Brand colors */
+  --color-accent: #DF6D14;
+  --color-accent-hover: #e68748;
+  --color-accent-light: #ffffff0a;
+
+  /* Grayscale for dark UI */
+  --color-black: #fff;
+  --color-white: #121212;
+  --color-text: #ffffff;
+  --color-muted: #cccccc;
+  --color-light: #999999;
+  --color-bg: #1e1e1e;
+
+  /* Shadows */
+  --shadow-soft: 0 2px 4px rgba(255, 255, 255, 0.06);
+  --shadow-deep: 0 4px 8px rgba(0, 0, 0, 0.5);
+  --shadow-card: 0px 0px 10px 0px rgba(255, 255, 255, 0.05);
+}
+
 
 /* Reset and base styles */
 * {
@@ -46,6 +66,7 @@ html {
 body {
   font-family: 'Steph', sans-serif;
   margin: 0;
+  background-color: var(--color-bg);
 }
 
 /* Navbar */
@@ -58,6 +79,40 @@ body {
   padding: 30px 45px;
   box-shadow: var(--shadow-soft);
 }
+.theme-switch {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 25%;
+  background-color: #00000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theme-switch svg {
+  fill: var(--color-text); /* Use fill instead of color */
+  width: 20px;
+  height: 20px;
+}
+
+/* Hide sun icon by default */
+.theme-switch svg:last-child {
+  display: none;
+}
+
+/* Swap icons in dark mode */
+.darkmode .theme-switch svg:first-child {
+  display: none;
+}
+
+.darkmode .theme-switch svg:last-child {
+  display: block;
+}
+
 
 .logo img {
   height: 50px;
@@ -95,6 +150,7 @@ body {
 .logo p {
   font-size: 24px;
   font-weight: bold;
+  color: var(--color-text)
 }
 
 /* About section */
@@ -119,6 +175,7 @@ body {
 .about-text {
   max-width: 600px;
   text-align: left;
+  color: var(--color-text)
 }
 
 .about-image {
@@ -197,6 +254,7 @@ body {
   margin-bottom: 1rem;
   font-size: 2.75rem;
   font-weight: 700;
+  color: var(--color-text);
 }
 
 .skills h2::after {
@@ -242,6 +300,7 @@ body {
   font-weight: 700;
   text-align: center;
   position: relative;
+  color: var(--color-text)
 }
 
 .publications h2::after {
@@ -284,28 +343,29 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  color:var(--color-text)
 }
 
 .pub-authors {
   font-size: 1rem;
   color: #444;
   margin-bottom: 0.3rem;
-}
-
-.faded-author {
-  color: var(--color-light);
-  text-decoration: underline dotted;
+  color:var(--color-light)
 }
 
 .pub-venue {
   font-style: italic;
   font-size: 0.95rem;
   margin-bottom: 0.8rem;
+  color:var(--color-light)
 }
 
 .pub-links {
   display: flex;
   gap: 1rem;
+}
+.publications h3{
+  color: var(--color-text)
 }
 
 .pub-btn {
@@ -332,6 +392,7 @@ body {
   font-size: 2.5rem;
   margin-bottom: 50px;
   position: relative;
+  color:var(--color-text);
 }
 
 .timeline-section h2::after {
@@ -349,6 +410,7 @@ body {
   position: relative;
   max-width: 1000px;
   margin: auto;
+  color: var(--color-text);
 }
 
 .timeline::after {
@@ -431,6 +493,7 @@ body {
   font-size: 2.5rem;
   margin-bottom: 50px;
   position: relative;
+  color: var(--color-text);
 }
 .projects h2:after{
   content: "";

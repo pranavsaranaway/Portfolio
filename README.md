@@ -30,7 +30,7 @@ This project does not use any external libraries or frameworks. Everything is bu
 - JavaScript (vanilla)
 
 ## 🖋️ Credits
-The font was made by [Steph Ran](https://www.linkedin.com/in/stephanieran/).
+The font was made by [Stephanie Ran](https://www.linkedin.com/in/stephanieran/).
 
 ## 📄 License
 This project is for personal use and demonstration purposes.
